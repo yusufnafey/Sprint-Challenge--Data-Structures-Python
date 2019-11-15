@@ -84,8 +84,8 @@ for name1 in names_1:
 for name2 in names_2:
     if binary_search.contains(name2):
         duplicates.append(name2)
-        
-# original
+
+# original O(n2)
 # duplicates = []
 # for name_1 in names_1:
 #     for name_2 in names_2:
@@ -95,4 +95,3 @@ for name2 in names_2:
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print (f"runtime: {end_time - start_time} seconds")
-
